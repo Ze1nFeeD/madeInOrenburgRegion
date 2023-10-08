@@ -4,6 +4,9 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
+    <style name="linerStyle">
+        <item name="cornerRadius">50dp</item>>
 
+    </style>>
     <style name="Theme.MadeInOrenburgRegion" parent="Base.Theme.MadeInOrenburgRegion" />
 </resources>
