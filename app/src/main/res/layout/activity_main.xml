@@ -9,17 +9,21 @@
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_above="@+id/bottomMainNav"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/bottomMainNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<com.google.android.material.bottomnavigation.BottomNavigationView
-    android:id="@+id/bottomMainNav"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/bgNavBar"
-    app:menu="@menu/mainmenu"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_editor_absoluteX="42dp"
-    />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomMainNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgNavBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_editor_absoluteX="42dp"
+        app:menu="@menu/mainmenu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
