@@ -1,5 +1,6 @@
 package com.example.madeinorenburgregion
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,11 +14,12 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         val view = inflater.inflate(R.layout.fragment_main, container, false)
-          val culture: ConstraintLayout = view.findViewById(R.id.cultureClick)
+
+        val culture: ConstraintLayout = view.findViewById(R.id.cultureClick)
         culture.setOnClickListener{
-            //активити
+            startActivity(Intent(activity, CultureActivity::class.java))
         }
         return view
     }
