@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
                }
                R.id.author->
                {
+
                    loadFragment(AuthorBlank())
                    true
                }
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
            return@setOnNavigationItemSelectedListener true
        }
     }
+
     private  fun loadFragment(fragment: Fragment){
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.container,fragment)
