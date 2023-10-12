@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".KazakClothFrag">
 
-
-
-
     <ScrollView
         android:id="@+id/myview"
         android:layout_width="fill_parent"
