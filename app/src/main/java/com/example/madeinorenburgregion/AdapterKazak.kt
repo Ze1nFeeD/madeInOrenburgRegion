@@ -9,17 +9,19 @@ class MyPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm){
         return when(position) {
             0 -> KazakHistoryFrag()
             1 -> KazakClothFrag()
-            else -> KazakKitchenFrag()
+            2 -> KazakKitchenFrag()
+            else -> KazakHolidayFrag()
         }
     }
     override fun getCount(): Int{
-        return 3
+        return 4
     }
     override fun getPageTitle(position: Int): CharSequence{
         return when (position){
             0 -> "История"
             1 -> "Одежда"
-            else ->"Кухня"
+            2 -> "Кухня"
+            else ->"Праздники"
         }
     }
 }
