@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TatarHolidayFrag">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/zag"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            >
+
+            <TextView
+
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="Праздники татарской культуры"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:text="Сабантуй (Сабан туу): Это один из главных праздников татарской культуры. Он отмечает окончание сельскохозяйственных работ и включает в себя соревнования, танцы, песни и национальные игры."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="200dp"
+                android:layout_height="140dp"
+                android:src="@drawable/sabantyi"
+                app:layout_constraintStart_toStartOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:text="Ураза-байрам: Этот праздник отмечает окончание мусульманского месяца поста Рамадан. В этот день люди собираются в мечетях, делятся праздничными блюдами и подарками."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="200dp"
+                android:layout_height="140dp"
+                android:src="@drawable/urazabairam"
+                app:layout_constraintStart_toStartOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:text="День Казани: Праздник, посвященный городу Казань и его истории. В этот день проводятся культурные мероприятия и фестивали."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/kazan"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:text="Эти праздники отражают богатое национальное наследие татарского народа и объединяют людей вокруг традиций, культуры и истории своего народа."
+
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -31,8 +31,8 @@
 
             <TextView
                 android:id="@+id/textView9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
                 android:text="Казахская кухня — это богатая и разнообразная кулинарная традиция, отличающаяся вкусными блюдами, которые часто включают мясо, мучные изделия и молочные продукты. Вот несколько популярных блюд и ингредиентов казахской кухни:"
                 android:textSize="16dp"
@@ -42,8 +42,8 @@
 
             <TextView
                 android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
                 android:text="Бешбармак: Это одно из национальных блюд Казахстана. Оно включает в себя куски мяса (обычно говядины или ягненка), приготовленные вместе с тестом. Блюдо обычно подается с луком и соусом."
                 android:textSize="16dp"
@@ -61,8 +61,8 @@
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
                 android:text="Манты: Это большие паровые пельмени, обычно с начинкой из мяса и лука. Манты часто подаются с кетчупом или острым соусом."
                 android:textSize="16dp"
@@ -80,8 +80,8 @@
 
             <TextView
                 android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
                 android:text="Самсы: Это похожие на пирожки блюда, обычно с начинкой из мяса и лука. Самсы можно приготовить, как жареные, так и запеченные."
                 android:textSize="16dp"
@@ -99,8 +99,8 @@
 
             <TextView
                 android:id="@+id/textView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
                 android:text="Баурсак: Это традиционное казахское печенье, которое обычно выпекается в форме узелков или квадратов. Баурсак подаются на праздниках и особых событиях."
                 android:textSize="16dp"
@@ -118,8 +118,8 @@
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginTop="24dp"
                 android:text="Кумыс и Шубат: Казахстан славится своими молочными продуктами, такими как кумыс (конское молоко) и шубат (верблюжье молоко). Эти напитки популярны среди казахов и считаются полезными."
                 android:textSize="16dp"
