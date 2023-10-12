@@ -5,10 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".KazakHistoryFrag">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="Казахская культура представляет собой удивительное слияние вековых традиций и современности в центральной Азии. Это наследие богато историей, музыкой, искусством и языком, отражая глубокие корни казахского народа и его связь с многими другими культурами. В этом введении мы рассмотрим ключевые аспекты казахской культуры, которые оформили ее неповторимый характер и влияние на жизнь людей в Оренбургской области и за ее пределами."
+        android:textSize="25dp"
+        />
 
 </FrameLayout>
