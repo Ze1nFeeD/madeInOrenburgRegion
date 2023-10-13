@@ -12,14 +12,16 @@ class CultureActivity : AppCompatActivity() {
         setContentView(R.layout.activity_culture)
         //Открытие Казахской культуры
         val kazakClick: ConstraintLayout = findViewById(R.id.kazakClick)
-        kazakClick.setOnClickListener{
+        kazakClick.setOnClickListener {
             startActivity(Intent(this, KazakActivity::class.java))
+        }
             //Открытие Татарской культуры
             val tatarClick: ConstraintLayout = findViewById(R.id.tatarClick)
-            tatarClick.setOnClickListener{
+            tatarClick.setOnClickListener {
+                Toast.makeText(this,"123",Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, TatarActivity::class.java))
             }
+
         }
     }
 
-}

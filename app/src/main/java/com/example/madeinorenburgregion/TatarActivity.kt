@@ -11,7 +11,7 @@ class TatarActivity : AppCompatActivity() {
         setContentView(R.layout.activity_tatar)
 
         val viewPager1 = findViewById<ViewPager>(R.id.viewpager1)
-        viewPager1.adapter = MyPagerAdapter(supportFragmentManager)
+        viewPager1.adapter = MyPagerAdapterTatar(supportFragmentManager)
         val tabLayout1 = findViewById<TabLayout>(R.id.sliding_tabs1)
         tabLayout1.setupWithViewPager(viewPager1)
     }
