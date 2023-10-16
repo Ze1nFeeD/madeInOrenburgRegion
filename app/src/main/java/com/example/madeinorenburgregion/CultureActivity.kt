@@ -18,9 +18,13 @@ class CultureActivity : AppCompatActivity() {
             //Открытие Татарской культуры
             val tatarClick: ConstraintLayout = findViewById(R.id.tatarClick)
             tatarClick.setOnClickListener {
-                Toast.makeText(this,"123",Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, TatarActivity::class.java))
             }
+                //Открытие Башкирской культуры
+                val BaskirClick: ConstraintLayout = findViewById(R.id.bashkirClick1)
+                BaskirClick.setOnClickListener {
+                    startActivity(Intent(this, BashkirActivity::class.java))
+                }
 
         }
     }

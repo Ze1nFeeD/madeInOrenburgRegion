@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BashkirHistoryFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Башкирская культура — это удивительное и многогранное явление, обогащенное вековыми традициями, уникальным языком, искусством, и образом жизни народа, проживающего в Республике Башкортостан, расположенной на перекрестке Европы и Азии. Глубоко уважаемые и бережно хранимые обычаи, яркие национальные костюмы, богатая кулинарная традиция и богатое музыкальное наследие делают башкирскую культуру неповторимой и удивительно привлекательной для тех, кто стремится понять и оценить многообразие культурного мира. Давайте погрузимся в этот мир и познакомимся с его интереснейшими аспектами."
+        android:textSize="25dp"
+        />
+
+</FrameLayout>
