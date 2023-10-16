@@ -34,17 +34,107 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
-                android:text="Наурыз Мейрам (Новруз байрам): Это праздник весны и обновления, который отмечается в марте. Наурыз Мейрам связан с традиционными ритуалами и праздничными блюдами."
+                android:text="Сабантуй: Этот праздник также отмечается башкирами, подобно татарской культуре. Сабантуй - это яркий и веселый праздник, который связан с окончанием сельскохозяйственных работ и включает в себя национальные гуляния, игры, танцы, соревнования и традиционную еду."
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <ImageView
-                android:layout_width="220dp"
+                android:id="@+id/imageView22"
+                android:layout_width="200dp"
                 android:layout_height="150dp"
-                android:src="@drawable/nauriz"
+                android:src="@drawable/sabantui2"
                 app:layout_constraintStart_toStartOf="@+id/textView7"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Сахилау: Это традиционное башкирское празднование встречи весны. В ходе праздника проводятся песни, танцы и национальные обряды."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="200dp"
+                android:layout_height="140dp"
+                android:src="@drawable/saxilay"
+                app:layout_constraintStart_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+
+
+                android:text="Ураза-байрам: Этот праздник, как и в других мусульманских культурах, отмечает окончание месяца Рамадан и является важным для башкирского народа."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/urzabashkir"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Каргатуй – башкирский праздник, посвященный прилету грачей. В переводе с башкирского этот день так и называется – «Грачиная свадьба»."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="220dp"
+                android:layout_height="150dp"
+                android:src="@drawable/karagantui"
+                app:layout_constraintStart_toStartOf="@+id/textView33"
+                app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+
+                android:text="Если многие праздники башкирского народа возникли под влиянием других культур, то Йыйын – это исконный, очень древний праздник именно этого народа. Отмечается он в день летнего солнцестояния. Праздник произошел из народного собрания, на котором решались все важные вопросы общины. Участвовали в нем только мужчины, позже эта традиция была ослаблена."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="225dp"
+                android:layout_height="140dp"
+                android:src="@drawable/iiin"
+                app:layout_constraintStart_toStartOf="@+id/textView34"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Эти праздники отражают культурное богатство и традиции башкирского народа, и они играют важную роль в сохранении и передаче культурного наследия этой культуры."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView26" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </FrameLayout>
