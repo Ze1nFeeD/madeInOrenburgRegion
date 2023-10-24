@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MadeInOrenburgRegion"
         tools:targetApi="31">
         <activity
+            android:name=".PuhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrandActivity"
+            android:exported="false" />
+        <activity
             android:name=".BashkirActivity"
             android:exported="false" />
         <activity

@@ -21,6 +21,10 @@ class MainFragment : Fragment() {
         culture.setOnClickListener{
             startActivity(Intent(activity, CultureActivity::class.java))
         }
+        val brand: ConstraintLayout = view.findViewById(R.id.brandClick)
+        brand.setOnClickListener{
+            startActivity(Intent(activity, BrandActivity::class.java))
+        }
         return view
     }
 }
