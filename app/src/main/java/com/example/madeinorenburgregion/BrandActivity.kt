@@ -13,5 +13,9 @@ class BrandActivity : AppCompatActivity() {
         puhClick.setOnClickListener{
             startActivity(Intent(this, PuhActivity::class.java))
         }
+        val orskMasoKombinatClick: ConstraintLayout = findViewById(R.id.orskmasokombinatClick)
+        orskMasoKombinatClick.setOnClickListener {
+            startActivity(Intent(this, OrskMasoKombinatActivity::class.java))
+            }
     }
 }
