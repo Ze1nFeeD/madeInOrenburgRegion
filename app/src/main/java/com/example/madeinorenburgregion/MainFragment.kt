@@ -25,6 +25,10 @@ class MainFragment : Fragment() {
         brand.setOnClickListener{
             startActivity(Intent(activity, BrandActivity::class.java))
         }
+        val attractions: ConstraintLayout = view.findViewById(R.id.attractionsClick)
+        attractions.setOnClickListener {
+            startActivity(Intent(activity, AttractionsActivity::class.java))
+        }
         return view
     }
 }

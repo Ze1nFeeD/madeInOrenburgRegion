@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MadeInOrenburgRegion"
         tools:targetApi="31">
         <activity
+            android:name=".IriklinskoeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParkPobediOrenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrenMuseimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AttractionsActivity"
+            android:exported="false" />
+        <activity
             android:name=".OrenburgMolokoZavodActivity"
             android:exported="false" />
         <activity
