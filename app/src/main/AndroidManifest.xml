@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -31,10 +34,6 @@
             android:name=".OrskMasoKombinatActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.login.OrskMasoKombinatActivity"
-            android:exported="false"
-            android:label="@string/title_activity_orsk_maso_kombinat" />
-        <activity
             android:name=".PuhActivity"
             android:exported="false" />
         <activity
@@ -51,9 +50,6 @@
             android:exported="false" />
         <activity
             android:name=".CultureActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AuthorActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,8 +1,10 @@
 package com.example.madeinorenburgregion
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 
 class BrandActivity : AppCompatActivity() {
@@ -17,5 +19,10 @@ class BrandActivity : AppCompatActivity() {
         orskMasoKombinatClick.setOnClickListener {
             startActivity(Intent(this, OrskMasoKombinatActivity::class.java))
             }
+        val orenMilkKombinat: ConstraintLayout = findViewById(R.id.orenmilkClick)
+        orenMilkKombinat.setOnClickListener {
+            startActivity(Intent(this, OrenburgMolokoZavodActivity::class.java))
+        }
+
     }
 }

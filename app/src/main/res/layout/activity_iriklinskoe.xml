@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:text="Оренбургский молочный комбинат"
+                android:text="Ириклинское водохранилище"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -35,40 +35,28 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
                 android:textSize="16dp"
-                android:text="Оренбургский молочный завод - это предприятие, специализирующееся на производстве молочной продукции и расположенное в российском городе Оренбурге. Этот молочный завод является одним из известных исторических символов Оренбурга и известен своим высококачественным молочным продуктом, в частности, овечьим и козьим молоком. Каждый день комбинат поставляет в магазины свежие и натуральные молочные продукты под брендом «Летний Луг» и «Молоко Оренбуржья»."
+                android:text="Ириклинское водохранилище — это крупное водохранилище в Оренбургской области"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-            <TextView
-                android:id="@+id/textView27"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:fontFamily="sans-serif-black"
-                android:text="Основные черты Оренбургского молочного завода включают:
-                "
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
             <TextView
                 android:id="@+id/textView35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="@string/fisrtAbzMilk"
+                android:text="@string/fistAbzIriklin"
                 android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
             <TextView
                 android:id="@+id/textView36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/secondAbzMilk"
+                android:text="@string/secondAbzIriklin"
                 android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +66,7 @@
                 android:id="@+id/textView37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/thirdAbzMilk"
+                android:text="@string/thirdAbzIriklin"
                 android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +76,7 @@
                 android:id="@+id/textView38"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fourthAbzMilk"
+                android:text="@string/fourthAbzIriklin"
                 android:textSize="16dp"
 
                 app:layout_constraintEnd_toEndOf="parent"
@@ -99,28 +87,31 @@
                 android:id="@+id/textView39"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Оренбургский молочный завод олицетворяет многовековые российские традиции в производстве молочной продукции и продолжает радовать своих клиентов натуральными и вкусными изделиями."
+                android:text="@string/fifthAbzIriklin"
                 android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
-            <Button
+            <TextView
+                android:id="@+id/textView46"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:text="Перейти на сайт"
+                android:layout_marginTop="24dp"
+                android:text="Ириклинское водохранилище представляет собой важный объект инфраструктуры, обеспечивающий водные ресурсы и возможности для отдыха в этой части России."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
             <Button
+                android:onClick="mapsIriklinskoe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
                 android:text="Построить маршрут"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
