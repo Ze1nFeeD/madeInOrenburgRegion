@@ -39,13 +39,13 @@
                 android:scaleType="centerCrop"
 
                 android:src="@drawable/orenmuseim"
-                app:layout_constraintBottom_toTopOf="@+id/textPuhProm"
+                app:layout_constraintBottom_toTopOf="@+id/textMuseimProm"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textPuhProm"
+                android:id="@+id/textMuseimProm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Музей истории Оренбурга"
@@ -66,7 +66,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layoutTop">
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/orskmasokombinatClick"
+            android:id="@+id/parkclick"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="8dp"
@@ -78,7 +78,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/orskmaso"
+                android:id="@+id/parkpobediImg"
                 android:layout_width="380dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="8dp"
@@ -87,13 +87,13 @@
                 android:scaleType="centerCrop"
 
                 android:src="@drawable/parkpobediorsk"
-                app:layout_constraintBottom_toTopOf="@+id/textTatar"
+                app:layout_constraintBottom_toTopOf="@+id/textPobedi"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textTatar"
+                android:id="@+id/textPobedi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Парк победы"
@@ -114,7 +114,7 @@
         app:layout_constraintTop_toBottomOf="@+id/layoutSecond">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/orenmilkClick"
+            android:id="@+id/iriklinhranClick"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="8dp"
@@ -126,7 +126,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/milkImg"
+                android:id="@+id/iriklinImg"
                 android:layout_width="380dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="8dp"

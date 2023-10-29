@@ -2,6 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="bgNavBar">#4CAF50</color>
-    <color name="bgForms">#5DDA62</color>>
+    <color name="bgNavBar">#BA954A</color>
+<!--    <color name="bgForms">#5DDA62</color>-->
+<!--    <color name="bgForms">#F8CB71</color>-->
+    <color name="bgForms">#FBD587</color>
+    <color name="bgNavBot">#BA954A</color>
 </resources>
