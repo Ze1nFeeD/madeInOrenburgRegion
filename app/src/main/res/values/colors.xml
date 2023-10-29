@@ -7,4 +7,5 @@
 <!--    <color name="bgForms">#F8CB71</color>-->
     <color name="bgForms">#FBD587</color>
     <color name="bgNavBot">#BA954A</color>
+    <color name="dotsColor">#FF0000</color>
 </resources>
