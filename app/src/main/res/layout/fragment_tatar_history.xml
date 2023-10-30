@@ -17,22 +17,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Немного истории"
+            android:fontFamily="sans-serif-black"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:textSize="18dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="Татарская культура – это богатое и многогранное явление, которое пронизывает и обогащает историю и множество регионов России. Народ татар, с его богатой историей, традициями и языком, играет значительную роль в мозаике культурной палитры этой страны. Исходя из своего многовекового наследия, татарская культура олицетворяет сочетание восточных и западных влияний, что придает ей уникальный характер и неповторимую привлекательность. В данном контексте мы погрузимся в богатый мир Татарской культуры, рассмотрим ее ключевые аспекты, традиции и влияние на современное общество."
+            android:text="@string/historyTatar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textviewstart" />
-
+            app:layout_constraintTop_toBottomOf="@+id/textviewstart"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

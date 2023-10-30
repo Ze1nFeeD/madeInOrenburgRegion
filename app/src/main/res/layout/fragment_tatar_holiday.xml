@@ -25,6 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
+                android:fontFamily="sans-serif-black"
                 android:text="Праздники татарской культуры"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -37,8 +38,8 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:text="Сабантуй (Сабан туу): Это один из главных праздников татарской культуры. Он отмечает окончание сельскохозяйственных работ и включает в себя соревнования, танцы, песни и национальные игры."
-                android:textSize="16dp"
+                android:text="@string/firstTatarHoliday"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -58,8 +59,8 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
-                android:text="Ураза-байрам: Этот праздник отмечает окончание мусульманского месяца поста Рамадан. В этот день люди собираются в мечетях, делятся праздничными блюдами и подарками."
-                android:textSize="16dp"
+                android:text="@string/secondTatarHoliday"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView13" />
@@ -79,8 +80,8 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
-                android:text="День Казани: Праздник, посвященный городу Казань и его истории. В этот день проводятся культурные мероприятия и фестивали."
-                android:textSize="16dp"
+                android:text="@string/thirdTatarHoliday"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView14" />
@@ -101,7 +102,7 @@
 
                 android:layout_marginEnd="16dp"
                 android:text="Эти праздники отражают богатое национальное наследие татарского народа и объединяют людей вокруг традиций, культуры и истории своего народа."
-                android:textSize="16dp"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView15" />
