@@ -15,11 +15,14 @@ import com.example.madeinorenburgregion.MainActivity
 import com.example.madeinorenburgregion.R
 import com.romainpiel.shimmer.Shimmer
 import com.romainpiel.shimmer.ShimmerTextView
+import com.yandex.mapkit.MapKitFactory
 
 class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        MapKitFactory.setApiKey("33b9b2ff-c110-4b33-9d66-1433f24ea7a7")
+        MapKitFactory.initialize(this)
         //скроем заголовок окна
         window.requestFeature(Window.FEATURE_NO_TITLE)
         //Сделаем активность на весь на экран

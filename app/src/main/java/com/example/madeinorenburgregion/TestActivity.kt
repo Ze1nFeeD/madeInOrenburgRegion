@@ -24,7 +24,6 @@ class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        MapKitFactory.setApiKey("33b9b2ff-c110-4b33-9d66-1433f24ea7a7")
         MapKitFactory.initialize(this)
         setContentView(R.layout.activity_test)
         mapView = findViewById(R.id.mapview1)
