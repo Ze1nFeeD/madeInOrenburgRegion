@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.constraintlayout.widget.ConstraintLayout
 
 
@@ -30,7 +31,10 @@ class MainFragment : Fragment() {
         attractions.setOnClickListener {
             startActivity(Intent(activity, AttractionsActivity::class.java))
         }
-
+    val but: Button = view.findViewById(R.id.button)
+        but.setOnClickListener {
+            startActivity(Intent(activity, TestActivity::class.java))
+        }
         return view
     }
 }

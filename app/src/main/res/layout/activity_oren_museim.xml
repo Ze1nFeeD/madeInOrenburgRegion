@@ -17,9 +17,7 @@
             android:layout_height="match_parent"
             android:layout_width="match_parent"
             >
-
             <TextView
-
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -111,8 +109,8 @@
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/idViewPager"
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
@@ -126,6 +124,7 @@
                 android:id="@+id/dots_indicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 app:dotsColor="@color/black"
                 app:dotsCornerRadius="8dp"
                 app:dotsSize="16dp"
@@ -137,17 +136,35 @@
                 app:progressMode="true"
                 app:selectedDotColor="@color/dotsColor" />
 
-            <Button
-                android:id="@+id/buttonmaps"
-                android:onClick="maps"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Построить маршрут"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constrainMap"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dots_indicator" />
+                app:layout_constraintTop_toBottomOf="@+id/dots_indicator">
 
+                <com.yandex.mapkit.mapview.MapView
+                    android:id="@+id/mapview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <Button
+                android:id="@+id/buttonmaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="maps"
+                android:text="Построить маршрут"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constrainMap" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

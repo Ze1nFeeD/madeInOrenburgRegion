@@ -1,14 +1,9 @@
 package com.example.madeinorenburgregion
 
-import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.ImageSwitcher
-import androidx.viewpager.widget.ViewPager
 import com.example.madeinorenburgregion.databinding.ActivityMainBinding
-import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+import com.yandex.mapkit.Animation
 import com.yandex.mapkit.MapKitFactory
 import com.yandex.mapkit.MapKitFactory.setApiKey
 import com.yandex.mapkit.map.CameraPosition
@@ -19,12 +14,9 @@ import com.yandex.mapkit.map.PlacemarkMapObject
 import com.yandex.runtime.image.ImageProvider
 
 
-class OrenMuseimActivity : AppCompatActivity() {
-    lateinit var viewPager: ViewPager
-    lateinit var viewPagerAdapter: ViewPagerAdapter
-    lateinit var imageList: List<Int>
+class TestActivity : AppCompatActivity() {
 
-    lateinit var mapView: MapView
+     lateinit var mapView: MapView
     private lateinit var mapObjects: MapObjectCollection
     private lateinit var mapObjectCollection: MapObjectCollection
     private lateinit var placemarkMapObject: PlacemarkMapObject
@@ -34,45 +26,27 @@ class OrenMuseimActivity : AppCompatActivity() {
 
         MapKitFactory.setApiKey("33b9b2ff-c110-4b33-9d66-1433f24ea7a7")
         MapKitFactory.initialize(this)
-
-        setContentView(R.layout.activity_oren_museim)
-
+        setContentView(R.layout.activity_test)
         mapView = findViewById(R.id.mapview1)
+
 
         mapView.map.mapType = com.yandex.mapkit.map.MapType.MAP
         mapObjects = mapView.map.mapObjects.addCollection()
 
 
-        val cameraPosition = CameraPosition(Point(51.755481, 55.108387), 15.0f, 0.0f, 0.0f)
-        mapView.map.move(cameraPosition)
+       // Установка начальной позиции и масштаба карты
+       val cameraPosition = CameraPosition(Point(51.755481, 55.108387), 15.0f, 0.0f, 0.0f)
+       mapView.map.move(cameraPosition)
 
-
+        // Добавление маркера
         val point = Point(51.755481, 55.108387)
-
 
         val marker = R.drawable.marker // Добавляем ссылку на картинку
         mapObjectCollection = mapView.map.mapObjects // Инициализируем коллекцию различных объектов на карте
         placemarkMapObject = mapObjectCollection.addPlacemark(point, ImageProvider.fromResource(this, marker)) // Добавляем метку со значком
         placemarkMapObject.setText("Музей города Оренбург") // Устанавливаем текст сверху метки
-
-
-        viewPager = findViewById(R.id.idViewPager)
-        val dotsIndicator = findViewById<DotsIndicator>(R.id.dots_indicator)
-
-        imageList = ArrayList<Int>()
-        imageList = imageList + R.drawable.orenmuseim1
-        imageList = imageList + R.drawable.orenmuseim2
-        imageList = imageList + R.drawable.orenmuseim3
-        imageList = imageList + R.drawable.orenmuseim4
-        imageList = imageList + R.drawable.orenmuseim5
-
-
-        viewPagerAdapter = ViewPagerAdapter(this@OrenMuseimActivity, imageList)
-
-
-        viewPager.adapter = viewPagerAdapter
-        dotsIndicator.attachTo(viewPager)
     }
+
     override fun onStop() {
 
         mapView.onStop()
@@ -86,11 +60,4 @@ class OrenMuseimActivity : AppCompatActivity() {
         MapKitFactory.getInstance().onStart()
         super.onStart()
     }
-    fun maps(view: View) {
-        val geoUriString = "geo:51.755481, 55.108387?z=15"
-        val geoUri: Uri = Uri.parse(geoUriString)
-        val mapIntent = Intent(Intent.ACTION_VIEW, geoUri)
-        startActivity(mapIntent)
-    }
-
 }
