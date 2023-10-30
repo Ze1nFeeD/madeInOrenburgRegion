@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgForms"
     tools:context=".BashkirHolidayFrag">
 
     <ScrollView
@@ -25,16 +26,20 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="Праздники башкирской культуры"
+                android:fontFamily="sans-serif-black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView7"
+                android:textSize="18dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
-                android:text="Сабантуй: Этот праздник также отмечается башкирами, подобно татарской культуре. Сабантуй - это яркий и веселый праздник, который связан с окончанием сельскохозяйственных работ и включает в себя национальные гуляния, игры, танцы, соревнования и традиционную еду."
+                android:layout_marginEnd="16dp"
+                android:text="@string/firstBashkirHoliday"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -49,11 +54,13 @@
 
             <TextView
                 android:id="@+id/textView31"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Сахилау: Это традиционное башкирское празднование встречи весны. В ходе праздника проводятся песни, танцы и национальные обряды."
-                android:textSize="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/secondBashkirHoliday"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView22" />
@@ -68,12 +75,14 @@
 
             <TextView
                 android:id="@+id/textView32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+
+
                 android:layout_marginTop="24dp"
-
-
-                android:text="Ураза-байрам: Этот праздник, как и в других мусульманских культурах, отмечает окончание месяца Рамадан и является важным для башкирского народа."
+                android:layout_marginEnd="16dp"
+                android:text="@string/thirdBaskirHoliday"
                 android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -89,11 +98,13 @@
 
             <TextView
                 android:id="@+id/textView33"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Каргатуй – башкирский праздник, посвященный прилету грачей. В переводе с башкирского этот день так и называется – «Грачиная свадьба»."
-                android:textSize="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/fourthBashkirHoliday"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView24" />
@@ -108,12 +119,14 @@
 
             <TextView
                 android:id="@+id/textView34"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
 
-                android:text="Если многие праздники башкирского народа возникли под влиянием других культур, то Йыйын – это исконный, очень древний праздник именно этого народа. Отмечается он в день летнего солнцестояния. Праздник произошел из народного собрания, на котором решались все важные вопросы общины. Участвовали в нем только мужчины, позже эта традиция была ослаблена."
-                android:textSize="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/fifthBashkirHoliday"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView25" />
@@ -127,11 +140,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
                 android:text="Эти праздники отражают культурное богатство и традиции башкирского народа, и они играют важную роль в сохранении и передаче культурного наследия этой культуры."
-                android:textSize="16dp"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView26" />

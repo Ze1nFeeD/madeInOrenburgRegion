@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgForms"
     tools:context=".BashkirClothFrag">
 
     <ScrollView
@@ -24,6 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
+                android:fontFamily="sans-serif-black"
                 android:text="Одежда в башкирской культуре"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -31,11 +33,13 @@
 
             <TextView
                 android:id="@+id/textView24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Бурек: традиционный головной убор. Этот головной убор носится как символ национальной идентичности и культурного наследия, и его форма и дизайн могут различаться в зависимости от региона и традиций."
-                android:textSize="20dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/firstAbzClothBashkir"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -50,11 +54,13 @@
 
             <TextView
                 android:id="@+id/textView25"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Елян:верхняя длиннополоая одежда на подкладе, с руквами. В основном носили нараспашку, реже подвязывая поясом."
-                android:textSize="20dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/secondAbzClothBashkir"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView16" />
@@ -69,12 +75,15 @@
 
             <TextView
                 android:id="@+id/textView26"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="Сарык:Традиционная башкирская мужская и женская кожанная обувь.Различают сарык с простой и сложной орнаментацией."
-                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/thirdAbzClothBashkir"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView17" />
 

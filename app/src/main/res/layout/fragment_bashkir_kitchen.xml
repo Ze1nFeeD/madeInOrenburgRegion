@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgForms"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BashkirKitchenFrag">
@@ -24,6 +25,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="Кухня башкирской культуры"
+                android:fontFamily="sans-serif-black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -32,20 +34,24 @@
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
                 android:text="Башкирская кухня представляет собой разнообразное сочетание местных традиций и влияния культур соседних народов. Основу башкирской кухни составляют мясо, молочные продукты и злаки. Вот некоторые популярные блюда и ингредиенты:"
-                android:textSize="16dp"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <TextView
                 android:id="@+id/textView27"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Шурпа: Это суп, приготовленный из мяса (чаще всего баранины или говядины), картофеля, лука и моркови. Шурпа обычно приправляется специями, такими как кинза и перец, что придает ему насыщенный вкус."
-                android:textSize="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/firstBashkirKitchen"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -55,16 +61,18 @@
                 android:layout_width="200dp"
                 android:layout_height="140dp"
                 android:src="@drawable/shurpa"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView27"
                 app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
             <TextView
                 android:id="@+id/textView28"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Чак-чак: Это сладкое блюдо, приготовленное из меда и теста, высушенного в маленькие кусочки. Чак-чак украшают орехами и иногда посыпают сахаром или корицей"
-                android:textSize="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/secondBashkirKitchen"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView18" />
@@ -74,16 +82,18 @@
                 android:layout_width="200dp"
                 android:layout_height="140dp"
                 android:src="@drawable/chakchak"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView28"
                 app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
             <TextView
                 android:id="@+id/textView29"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Карась бастыры: Блюдо из рыбы, обжаренной в тесте. Оно имеет хрустящую корку и нежное мясо внутри."
-                android:textSize="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/thirdBashkirKitchen"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView19" />
@@ -98,11 +108,13 @@
 
             <TextView
                 android:id="@+id/textView30"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Кумыс: Это ферментированное молоко, являющееся популярным напитком среди башкир. Оно получается из кобыльего молока и имеет характерный кисловатый вкус."
-                android:textSize="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/fourthBashkirKitchen"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView20" />
@@ -116,11 +128,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
                 android:text="Эти блюда отражают богатство и разнообразие башкирской кулинарии, которая сочетает в себе влияния восточных и европейских кухонь, а также традиции пастушьего и охотничьего быта."
-                android:textSize="16dp"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView21" />

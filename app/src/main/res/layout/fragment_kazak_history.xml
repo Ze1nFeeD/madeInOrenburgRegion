@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgForms"
     tools:context=".KazakHistoryFrag">
 
-
-    <TextView
-        android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/zag"
         android:layout_height="match_parent"
-        android:text="Казахская культура представляет собой удивительное слияние вековых традиций и современности в центральной Азии. Это наследие богато историей, музыкой, искусством и языком, отражая глубокие корни казахского народа и его связь с многими другими культурами. В этом введении мы рассмотрим ключевые аспекты казахской культуры, которые оформили ее неповторимый характер и влияние на жизнь людей в Оренбургской области и за ее пределами."
-        android:textSize="25dp"
-        />
+        android:layout_width="match_parent"
+        >
+    <TextView
+        android:id="@+id/textviewstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Немного истории"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/firstKazakHistory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textviewstart" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

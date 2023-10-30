@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgForms"
     tools:context=".TatarClothFrag">
 
     <ScrollView
@@ -33,7 +34,9 @@
                 android:id="@+id/textView16"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
                 android:text="Татарская одежда является неотъемлемой частью этнической и культурной идентичности народа татар. В разные исторические периоды и в зависимости от региона, татарская одежда может немного различаться, но существуют общие черты:"
                 android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +47,9 @@
                 android:id="@+id/textView17"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
                 android:text="Башлык: Это вариант платка, который используется для покрытия головы и плеч женщин. Он может быть разнообразно оформлен и расшит."
                 android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -52,11 +57,53 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
             <ImageView
+                android:id="@+id/image17"
                 android:layout_width="150dp"
                 android:layout_height="180dp"
                 android:src="@drawable/bashlik"
                 app:layout_constraintStart_toStartOf="@+id/textView17"
                 app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:text="Пояс: Пояс важен в татарской одежде и может быть использован для подчеркивания фигуры и придания одежде дополнительного декоративного элемента."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image17" />
+
+            <ImageView
+                android:id="@+id/image18"
+                android:layout_width="270dp"
+                android:layout_height="160dp"
+                android:src="@drawable/tatarpoyas"
+                app:layout_constraintStart_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:text=" Татарская обувь может включать в себя сапоги, ботинки или туфли, в зависимости от времени года и события."
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image18" />
+
+            <ImageView
+                android:id="@+id/image19"
+                android:layout_width="250dp"
+                android:layout_height="210dp"
+                android:src="@drawable/tatarobyvi"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

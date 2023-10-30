@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgForms"
     tools:context=".KazakClothFrag">
 
     <ScrollView
@@ -25,6 +26,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="Одежда в казахской культуре"
+                android:fontFamily="sans-serif-black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -33,9 +35,11 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:textSize="16dp"
-                android:text="Чапан (шапан): Чапан - это длинное пальто с широкими рукавами, которое традиционно носилось как верхняя одежда. Оно может быть разнообразных цветов и украшено вышивкой или узорами."
+                android:layout_marginEnd="16dp"
+                android:text="@string/firstKazakCloth"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -52,9 +56,11 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:textSize="16dp"
-                android:text="Камзол: Камзол - это жилет, который носится поверх рубашки или майки. Камзолы могут быть изготовлены из различных материалов и украшены узорами и вышивкой."
+                android:layout_marginEnd="16dp"
+                android:text="@string/secondKazakCloth"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -69,11 +75,13 @@
 
             <TextView
                 android:id="@+id/textView5"
-                android:textSize="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Шаль (тайга): Шали носят в качестве головного убора или как шарф. Они обычно выполнены в традиционных узорах и служат как украшение и защита от холода."
+                android:layout_marginEnd="16dp"
+                android:text="@string/thirdKazakCloth"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -83,21 +91,22 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:src="@drawable/shal"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
                 app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
             <TextView
                 android:id="@+id/textView6"
-                android:textSize="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
 
                 android:layout_marginTop="24dp"
-                android:text="Тюбетейка (шапка): Тюбетейка - это традиционная шапка с круглой формой и жестким верхом. Она может быть украшена накладными узорами и шнурками."
+                android:layout_marginEnd="16dp"
+                android:text="@string/forthKazakCloth"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
 
 
             <ImageView
@@ -105,7 +114,7 @@
                 android:layout_height="200dp"
                 android:src="@drawable/tubitika"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
                 app:layout_constraintTop_toBottomOf="@+id/textView6" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
