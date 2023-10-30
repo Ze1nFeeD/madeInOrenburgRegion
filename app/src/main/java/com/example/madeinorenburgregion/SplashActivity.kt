@@ -6,6 +6,7 @@ import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
 import com.example.madeinorenburgregion.MainActivity
 import com.example.madeinorenburgregion.R
 
@@ -26,6 +27,6 @@ class SplashActivity : AppCompatActivity() {
             startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             //И остановка splash активности
             finish()
-        },1000)
+        },4000)
     }
 }
