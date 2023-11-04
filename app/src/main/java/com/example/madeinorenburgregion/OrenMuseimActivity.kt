@@ -32,7 +32,7 @@ class OrenMuseimActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        MapKitFactory.setApiKey("33b9b2ff-c110-4b33-9d66-1433f24ea7a7")
+
         MapKitFactory.initialize(this)
 
         setContentView(R.layout.activity_oren_museim)
@@ -50,10 +50,10 @@ class OrenMuseimActivity : AppCompatActivity() {
         val point = Point(51.755481, 55.108387)
 
 
-        val marker = R.drawable.marker // Добавляем ссылку на картинку
-        mapObjectCollection = mapView.map.mapObjects // Инициализируем коллекцию различных объектов на карте
-        placemarkMapObject = mapObjectCollection.addPlacemark(point, ImageProvider.fromResource(this, marker)) // Добавляем метку со значком
-        placemarkMapObject.setText("Музей города Оренбург") // Устанавливаем текст сверху метки
+        val marker = R.drawable.marker
+        mapObjectCollection = mapView.map.mapObjects
+        placemarkMapObject = mapObjectCollection.addPlacemark(point, ImageProvider.fromResource(this, marker))
+
 
 
         viewPager = findViewById(R.id.idViewPager)

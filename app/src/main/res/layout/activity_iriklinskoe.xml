@@ -132,6 +132,24 @@
                 app:progressMode="true"
                 app:selectedDotColor="@color/dotsColor" />
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constrainMap"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dots_indicator">
+
+                <com.yandex.mapkit.mapview.MapView
+                    android:id="@+id/mapview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
             <Button
                 android:onClick="mapsIriklinskoe"
                 android:layout_width="wrap_content"
@@ -139,7 +157,7 @@
                 android:text="Построить маршрут"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dots_indicator" />
+                app:layout_constraintTop_toBottomOf="@+id/constrainMap" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
