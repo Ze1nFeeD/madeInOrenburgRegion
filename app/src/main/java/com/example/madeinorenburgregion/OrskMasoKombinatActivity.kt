@@ -5,6 +5,9 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ScrollView
+import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.yandex.mapkit.MapKitFactory
 import com.yandex.mapkit.geometry.Point
 import com.yandex.mapkit.map.CameraPosition
@@ -32,6 +35,7 @@ class OrskMasoKombinatActivity : AppCompatActivity() {
 
 
 
+
         val cameraPosition = CameraPosition(Point(51.199688, 58.620408), 15.0f, 0.0f, 0.0f)
         mapView.map.move(cameraPosition)
 
@@ -41,9 +45,6 @@ class OrskMasoKombinatActivity : AppCompatActivity() {
         val marker = R.drawable.marker
         mapObjectCollection = mapView.map.mapObjects
         placemarkMapObject = mapObjectCollection.addPlacemark(point, ImageProvider.fromResource(this, marker))
-
-
-
 
     }
     fun maps(view: View) {
