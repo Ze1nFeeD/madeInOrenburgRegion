@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import com.yandex.mapkit.MapKitFactory
 import com.yandex.mapkit.geometry.Point
 import com.yandex.mapkit.map.CameraPosition
@@ -44,6 +45,16 @@ class OrenburgMolokoZavodActivity : AppCompatActivity() {
         mapObjectCollection = mapView.map.mapObjects
         placemarkMapObject = mapObjectCollection.addPlacemark(point, ImageProvider.fromResource(this, marker))
         placemarkMapObject.setText("Оренбургский Молочный Комбинат")
+
+        val buttonLink = findViewById<Button>(R.id.btnLinkToSite)
+
+        buttonLink.setOnClickListener {
+            val url = "https://a7agro.ru/"
+
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
 
     }
     fun maps(view: View) {

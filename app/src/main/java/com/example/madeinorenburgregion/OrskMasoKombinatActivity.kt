@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ScrollView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
@@ -46,6 +47,15 @@ class OrskMasoKombinatActivity : AppCompatActivity() {
         mapObjectCollection = mapView.map.mapObjects
         placemarkMapObject = mapObjectCollection.addPlacemark(point, ImageProvider.fromResource(this, marker))
 
+        val buttonLink = findViewById<Button>(R.id.btnLinkToSite)
+
+        buttonLink.setOnClickListener {
+            val url = "https://orskmk.ru/"
+
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
     }
     fun maps(view: View) {
         val geoUriString = "geo:51.199688, 58.620408?z=15"
