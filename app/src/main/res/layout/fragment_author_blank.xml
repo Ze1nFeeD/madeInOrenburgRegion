@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
         android:text="О приложении"
         android:textSize="28dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,11 +22,14 @@
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Приложение 'Сделано в Оренбургской области' — ваш надежный гид в мире местных производителей и уникальных товаров, созданных с любовью и креативностью прямо в нашем крае."
+        android:layout_marginEnd="16dp"
+        android:text="Приложение 'Сделано в Оренбуржье' — ваш надежный гид в мире местных производителей и уникальных товаров, созданных с любовью и креативностью прямо в нашем крае."
         android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/zagPril" />
 
@@ -33,6 +37,7 @@
         android:id="@+id/authorText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Автор:"
         android:textSize="22dp"
@@ -59,6 +64,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toTopOf="@+id/textVersion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAuthor" />
+
+    <Button
+        android:id="@+id/btnFeedBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Обратная связь"
+        app:layout_constraintBottom_toTopOf="@+id/textVersionZag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/textVersion"
         android:layout_width="wrap_content"
@@ -66,5 +92,7 @@
         android:text="@string/app_version"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textVersionZag" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
