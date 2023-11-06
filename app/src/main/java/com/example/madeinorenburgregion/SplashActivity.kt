@@ -72,7 +72,7 @@ class SplashActivity : AppCompatActivity() {
             startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             //И остановка splash активности
             finish()
-        },500)
+        },5000)
     }
     // Функция для плавного появления текста
     private fun animateTextAppearance(textView: TextView) {
