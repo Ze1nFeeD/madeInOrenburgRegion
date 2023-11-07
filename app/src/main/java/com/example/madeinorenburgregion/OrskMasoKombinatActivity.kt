@@ -56,6 +56,16 @@ class OrskMasoKombinatActivity : AppCompatActivity() {
             intent.data = Uri.parse(url)
             startActivity(intent)
         }
+
+        val constraintLayoutMap: ConstraintLayout = findViewById(R.id.lockMap)
+        constraintLayoutMap.setOnClickListener {
+            val myToast = Toast.makeText(this, "Нажали кнопку!", Toast.LENGTH_SHORT)
+            myToast.show()
+            constraintLayoutMap.visibility = View.GONE
+                val myview: ScrollView = findViewById(R.id.myview)
+                myview.stopNestedScroll()
+        }
+
     }
     fun maps(view: View) {
         val geoUriString = "geo:51.199688, 58.620408?z=15"

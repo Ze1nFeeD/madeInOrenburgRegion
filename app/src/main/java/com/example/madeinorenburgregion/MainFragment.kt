@@ -31,10 +31,7 @@ class MainFragment : Fragment() {
         attractions.setOnClickListener {
             startActivity(Intent(activity, AttractionsActivity::class.java))
         }
-    val but: Button = view.findViewById(R.id.button)
-        but.setOnClickListener {
-            startActivity(Intent(activity, TestActivity::class.java))
-        }
+
         return view
     }
 }

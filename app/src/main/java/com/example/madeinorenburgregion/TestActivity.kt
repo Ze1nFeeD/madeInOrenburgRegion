@@ -1,7 +1,13 @@
 package com.example.madeinorenburgregion
 
+import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
+import android.widget.Toast
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.isGone
 import com.example.madeinorenburgregion.databinding.ActivityMainBinding
 import com.yandex.mapkit.Animation
 import com.yandex.mapkit.MapKitFactory
@@ -23,7 +29,7 @@ class TestActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        MapKitFactory.setApiKey("33b9b2ff-c110-4b33-9d66-1433f24ea7a7")
         MapKitFactory.initialize(this)
         setContentView(R.layout.activity_test)
         mapView = findViewById(R.id.mapview1)
@@ -44,6 +50,13 @@ class TestActivity : AppCompatActivity() {
         mapObjectCollection = mapView.map.mapObjects // Инициализируем коллекцию различных объектов на карте
         placemarkMapObject = mapObjectCollection.addPlacemark(point, ImageProvider.fromResource(this, marker)) // Добавляем метку со значком
         placemarkMapObject.setText("Музей города Оренбург") // Устанавливаем текст сверху метки
+
+        val constraintLayoutMap: ConstraintLayout = findViewById(R.id.con3)
+        constraintLayoutMap.setOnClickListener {
+            val myToast = Toast.makeText(this, "Нажали кнопку!", Toast.LENGTH_SHORT)
+            myToast.show()
+            constraintLayoutMap.visibility = View.GONE
+        }
     }
 
     override fun onStop() {
